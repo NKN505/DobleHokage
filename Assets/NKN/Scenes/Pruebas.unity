@@ -1358,17 +1358,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7412160511439835212, guid: 9d5211108996d6641b276a8e526fab96, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2294391622074962101}
-    - targetCorrespondingSourceObject: {fileID: 7412160511439835212, guid: 9d5211108996d6641b276a8e526fab96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2294391622074962100}
+      addedObject: {fileID: 2294391622074962105}
   m_SourcePrefab: {fileID: 100100000, guid: 9d5211108996d6641b276a8e526fab96, type: 3}
 --- !u!4 &2294391622074962099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7896666234685278966, guid: 9d5211108996d6641b276a8e526fab96, type: 3}
   m_PrefabInstance: {fileID: 2294391622074962098}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2294391622074962100
+--- !u!114 &2294391622074962105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1377,20 +1374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 974719151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc36d23de1c6de544a75e4785a1a0e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shinobi: {fileID: 2294391622074962101}
---- !u!114 &2294391622074962101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974719151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c471864f15bade245b4061f84aa8219c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee90a298e13441844a1eaac04ee9379a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -1490,6 +1474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JONIN
       objectReference: {fileID: 0}
+    - target: {fileID: 1271598114995586165, guid: 19354c02fdf839a4d871f5e83c9712b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1940575432733499087, guid: 19354c02fdf839a4d871f5e83c9712b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.2391434
@@ -1533,7 +1521,7 @@ PrefabInstance:
     - target: {fileID: 5569799461843943942, guid: 19354c02fdf839a4d871f5e83c9712b1, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: f17446aba906bfc4091f308e3d9629a1, type: 2}
+      objectReference: {fileID: 9100000, guid: 316b53a327aa8cd4e8ed05f894632799, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1563,8 +1551,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2294391622074962099}
+  playerTag: Player
   attackDistance: 1.5
+  stopDistance: 1
   chaseSpeed: 1
+  attackCooldown: 1
+  kickChance: 0.3
+  kunaiChance: 0.15
+  blockChance: 0.7
 --- !u!114 &3206973300976570543
 MonoBehaviour:
   m_ObjectHideFlags: 0
